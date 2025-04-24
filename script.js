@@ -2,14 +2,19 @@ fetch('data.json')
   .then(res => res.json())
   .then(data => {
     const tbody = document.querySelector('#mobiteli tbody');
+    tbody.innerHTML = '';  // očisti, ako si slučajno duplirao
     data.forEach(item => {
       const tr = document.createElement('tr');
-      tr.className = item.status;
+      tr.className = item.status;  // boja reda po statusu
+
+      // Sastavljamo HTML za redak
       tr.innerHTML = `
         <td>
-          <a href="${item.image}" target="_blank">
-            <img src="${item.image}" alt="${item.model}" />
-          </a>
+          ${item.image
+            ? `<a href="${item.image}" target="_blank">
+                 <img src="${item.image}" alt="${item.model}">
+               </a>`
+            : ''}
         </td>
         <td>${item.model}</td>
         <td>${item.godina}</td>
@@ -20,4 +25,4 @@ fetch('data.json')
       tbody.appendChild(tr);
     });
   })
-  .catch(err => console.error(err));
+  .catch(err => console.error('Greška pri učitavanju data.json:', err));
