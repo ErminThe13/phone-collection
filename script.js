@@ -6,6 +6,11 @@ fetch('data.json')
       const tr = document.createElement('tr');
       tr.className = item.status;
       tr.innerHTML = `
+        <td>
+          <a href="${item.image}" target="_blank">
+            <img src="${item.image}" alt="${item.model}" />
+          </a>
+        </td>
         <td>${item.model}</td>
         <td>${item.godina}</td>
         <td>${item.ekran}</td>
