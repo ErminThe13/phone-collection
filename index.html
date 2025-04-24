@@ -2,32 +2,42 @@
 <html lang="hr">
 <head>
   <meta charset="UTF-8">
-  <title>Kolekcija mobitela</title>
+  <title>Kolekcija starih mobitela</title>
   <style>
-  /* ... postojeći stilovi ... */
-  td img {
-    display: block;
-    max-width: 80px;
-    height: auto;
-    cursor: pointer;
-  }
-</style>
+    body { font-family: sans-serif; padding: 1rem; }
+    table { border-collapse: collapse; width: 100%; margin-top: 1rem; }
+    th, td { border: 1px solid #ccc; padding: 0.5rem; text-align: left; }
+    th { background: #f0f0f0; }
+    .Imam { background: #d4edda; }
+    .Želim { background: #f8d7da; }
+    .Nemam { background: #fff3cd; }
+    td img {
+      display: block;
+      max-width: 80px;
+      height: auto;
+      cursor: pointer;
+    }
+  </style>
 </head>
 <body>
   <h1>Kolekcija starih mobitela</h1>
+
   <table id="mobiteli">
     <thead>
-  <tr>
-    <th>Fotografija</th>
-    <th>Model</th>
-    <th>Godina</th>
-    <th>Ekran</th>
-    <th>Memorija</th>
-    <th>Status</th>
-  </tr>
-</thead>
-    <tbody></tbody>
+      <tr>
+        <th>Fotografija</th>
+        <th>Model</th>
+        <th>Godina</th>
+        <th>Ekran</th>
+        <th>Memorija</th>
+        <th>Status</th>
+      </tr>
+    </thead>
+    <tbody>
+      <!-- Dinamički popunjeno skriptom -->
+    </tbody>
   </table>
+
   <script src="script.js"></script>
 </body>
 </html>
