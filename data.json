@@ -1,9 +1,11 @@
 [
   {
-    "model": "Nokia 6600",
-    "godina": 2000,
-    "ekran": "2.0\" Monochrome",
-    "memorija": "1 MB",
+    "Redni Broj": "1",
+    "Naziv": "Nokia 6600",
+    "Interna oznaka": "RM-222",
+    "Na tržištu": "Q4, 2000",
+    "Baterija": "CL-b5",
+    "OS": "S60 v3",
     "status": "Imam",
     "image": "phone-collection/images/Nokia 6600.jpg"
   },
