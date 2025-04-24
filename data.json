@@ -1,16 +1,19 @@
 [
   {
-    "model": "Nokia 3310",
+    "model": "Nokia 6600",
     "godina": 2000,
     "ekran": "2.0\" Monochrome",
     "memorija": "1 MB",
-    "status": "Imam"
+    "status": "Imam",
+    "image": "images/Nokia 6600.jpg"
   },
   {
     "model": "Sony Ericsson T68",
     "godina": 2002,
     "ekran": "101x80 px",
     "memorija": "0.5 MB",
-    "status": "Želim"
+    "status": "Želim",
+    "image": "images/Nokia N95 8GB.webp"
   }
 ]
+
